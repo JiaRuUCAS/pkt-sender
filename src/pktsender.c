@@ -151,7 +151,7 @@ int pktsender_launch_one_lcore(void *arg __rte_unused)
 			LOG_DEBUG("Lcore %u job %u", lcoreid, i);
 		}
 	}
-	LOG_DEBUG("Lcore %u (thread %d) job_flags %u",
+	LOG_INFO("Lcore %u (thread %d) job_flags %u",
 					lcoreid, tid, conf->job_flags);
 
 	if (conf->job_flags == 0) {
